@@ -1,0 +1,304 @@
+.ex-1-square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+/** soluzione1**/
+
+.ex-1-square:hover {
+    background-color: red;
+    transition: ease 8s;
+}
+
+/**  fine-soluzione1**/
+
+/** soluzione2**/
+
+.ex-2-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-2-square:hover {
+    width: 300px;
+    height: 300px;
+    transition: linear 8s;
+}
+
+/**  fine-soluzione2**/
+
+/**inizio soluzione3**/
+
+.ex-3-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+    transition: ease 8s;
+
+}
+
+/**fine soluzione3**/
+
+/**inizio soluzione4**/
+
+.ex-4-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+    transition: ease 8s;
+
+}
+
+/**fine soluzione4**/
+/**inizio soluzione5**/
+
+.ex-5-square {
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+
+.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+
+}
+
+.ex-5-square:active {
+    width: 10px;
+    height: 10px;
+}
+
+/**fine soluzione5**/
+/**inizio soluzione6**/
+
+
+.ex-6-img,
+.ex-7-img,
+.ex-8-img {
+    width: 500px;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%)
+}
+
+/**fine soluzione6**/
+
+/** soluzione 7**/
+
+.ex-6-img:hover {
+    filter: grayscale(100%) sepia(60%);
+    transition: ease 5s;
+}
+
+/**fine soluzione 7**/
+
+/**inizio soluzione8**/
+
+.ex-8-img {
+    filter: brightness(20%) opacity(70%);
+    border-radius: 50px;
+}
+
+/*fine soluzione8**/
+
+/**inizio soluzione9**/
+
+
+.ex-9-img {
+    margin: 50px 100px;
+    width: 400px;
+}
+
+.ex-9-img {
+    filter: grayscale(0.7) sepia(0.6);
+    border-radius: 50px;
+}
+
+/**fine soluzione9**/
+/**inizio soluzione10**/
+
+.ex-10-icon {
+    font-size: 60px;
+    animation: ruota 1s infinite;
+}
+
+@keyframes ruota {
+    0% {
+        transform: rotate(5turn);
+    }
+}
+
+/**fine soluzione10**/
+/**inizio soluzione11**/
+
+
+
+.ex-11-icon {
+    font-size: 60px;
+    animation: rotate 6s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+
+    }
+
+    80% {
+        transform: rotate(300deg);
+
+
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/**fine soluzione11**/
+/**inizio soluzione12**/
+
+.ex-12-button,
+.ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: spostamento 5s linear;
+}
+
+@keyframes spostamento {
+    0% {
+        left: 50%;
+    }
+
+    50% {
+        bottom: 30%;
+    }
+
+    100% {
+        0;
+    }
+
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: spostamentobottom 5s linear;
+}
+
+@keyframes spostamentobottom {
+    0% {
+        right: 40%;
+    }
+
+    50% {
+        right: 10%
+    }
+
+    100% {
+        right: 10%;
+    }
+}
+
+/**fine soluzione12**/
+
+
+/**inizio soluzione13**/
+
+
+.ex-12-top-white,
+.ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-bottom-white,
+.ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: giro-completo 5s linear;
+}
+
+@keyframes griro-completo {
+    0% {
+        left: 40%;
+    }
+
+
+    50% {
+        left: 20%;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: girocompleto2 5s linear;
+}
+
+@keyframes girocompleto2 {
+    0% {
+        right: 20%;
+    }
+    40% {
+        right: 120px;
+        bottom: -5px
+    }
+    50% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    80% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -30px;
+        bottom: -20px;
+    }
+    100% {
+        bottom: -20px;
+        right: 100px;
+    }
+}
+
+
+/**fine soluzione13**/
